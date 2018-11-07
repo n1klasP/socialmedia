@@ -1,3 +1,4 @@
+@import "colors.css";
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -6,10 +7,10 @@
     background: white;
 }
 ::-webkit-scrollbar-thumb {
-    background: #283739;
+    background: var(--primary);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #1E2D2F;
+    background: var(--primary);
 }
 
 /* unvisited link */

@@ -1,3 +1,5 @@
+@import "assets/css/colors.css";
+
 #divBody{
   position: absolute;
   background-color: green;
@@ -10,8 +12,8 @@
 #divHeader{
   position: relative;
   display: flex;
-  justify-content: space-between;
-  background-color: #1a2b3c;
+  justify-content: left;
+  background-color: var(--primary);
   top: 0;
   left: 0;
   width: 100%;
@@ -19,7 +21,7 @@
 }
 
 #divHeaderText{
-  color: white;
+  color: #f1f1f1;
   width: 250px;
   height: 40px;
   margin: 10px;
@@ -28,7 +30,7 @@
 
 #divMain{
   position: relative;
-  background-color: #191e28;
+  background-color: #f1f1f1;
   top: 0;
   left: 0;
   height: calc(100% - 60px);

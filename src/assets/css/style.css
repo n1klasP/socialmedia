@@ -1,0 +1,333 @@
+@import "../css/colors.css";
+
+#divLogo{
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    left: calc(50% - 400px);
+    top: 50px;
+}
+
+#divLogoImage1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: calc(50% - 40px);
+    background-image: url("../images/LogoA.svg");
+}
+
+#divLogoImage2{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    top: 10px;
+    left: calc(50% - 225px);
+    background-image: url("../images/LogoB.svg");
+    animation-name: divLogoImage2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes divLogoImage2 {
+    from { transform: translate(0, 0px); }
+    50%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, 0px); }
+}
+
+#divLinks{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    left: calc(50% - 400px);
+    top: 160px;
+}
+
+#divMenuHome{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: calc(50% - 400px);
+    top: 220px;
+    border: var(--primary) 0px solid;
+}
+
+#divLoginButtons{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+.buttonLogin{
+    font-size: 16px;
+    color: var(--primary);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 3px 20px 5px 20px;
+    cursor: pointer;
+    border: var(--primary) 3px solid;
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset var(--primary) 0px 0px;
+}
+.buttonLogin:hover{
+    box-shadow: inset var(--primary) 150px 0px;
+    color: #f1f1f1;
+}
+
+.buttonRegister{
+    font-size: 16px;
+    color: #f1f1f1;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 3px 20px 5px 20px;
+    cursor: pointer;
+    background-color: var(--primary);
+    border: var(--primary) 2px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonRegister:hover{
+    transform: scale(1.1);
+}
+
+.buttonHeader{
+    height: 100%;
+    padding: 5px;
+    line-height: 60px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.buttonHeader:hover{
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#divLogin{
+    width: 600px;
+    height: 300px;
+    left: calc(50% - 300px);
+    top: calc(50% - 150px);
+    position: absolute;
+}
+
+.form{
+    text-align: center;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: all 0.2s linear;
+}
+.input:hover{
+    border-radius: 10px;
+}
+
+#divPosts{
+    position: absolute;
+    top: 30px;
+    margin: 20px 0 20px 0;
+    width: 1000px;
+    left: calc(50% - 500px);
+
+}
+
+#post{
+    position: relative;
+    float: left;
+    background-color: white;
+    width: calc(100% - 20px);
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#postAvatar{
+    position: relative;
+    float: left;
+    background-color: var(--primary);
+    width: 96px;
+    height: 96px;
+    margin: 10px;
+    background-image: url("../images/avatar1.png");
+    background-size: contain;
+    border: var(--primary) 2px solid;
+}
+
+#postUsername{
+
+    float: left;
+    width: calc(100% - 20px);
+    width: calc(100% - 140px);
+    height: 35px;
+    margin: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+#postTimestamp{
+
+    float: left;
+    width: calc(100% - 20px);
+    width: calc(100% - 140px);
+    height: 35px;
+    margin: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    color: gray;
+}
+
+#postText{
+    position: relative;
+    float: left;
+    background-color: white;
+    width: calc(100% - 20px);
+    margin: 10px 10px 10px 10px;
+}
+
+.headerIcon{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+#divProfile{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    left: calc(50% - 500px);
+    top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+#profileBanner{
+    position: relative;
+    width: 1000px;
+    height: 240px;
+    left: calc(50% - 500px);
+    background-image: url("../images/banner1.png");
+}
+#profileAvatar{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: calc(100% - 110px);
+    background-image: url("../images/avatar1.png");
+    background-size: contain;
+    float: left;
+}
+#profileName{
+    position: relative;
+    height: 100px;
+    left: 20px;
+    top: calc(100% - 110px);
+    background-color: rgba(255,255,255,0.2);
+    background-size: contain;
+    float: left;
+    font-size: 32px;
+    color: var(--primary);
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 100px;
+}
+
+.profileInfoItem{
+    position: relative;
+    top: 10px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 0px;
+    float: left;
+    width: calc(100% - 20px);
+    font-size: 20px;
+}
+
+#profileInfo{
+    position: relative;
+    float: left;
+    height: calc(100% - 240px);
+    width: 30%;
+}
+
+#profileLastPosts{
+    position: relative;
+    float: left;
+    height: calc(100% - 240px);
+    width: 70%;
+    box-shadow: inset 20px 20px 20px -20px;
+    overflow: auto;
+}
+
+.imageHeader{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s all ease-in-out;
+}
+.buttonHeader:hover .imageHeader{
+    transform: scale(1.1);
+}
+
+#divSettings{
+    position: absolute;
+    width: 1000px;
+    top: 50px;
+    height: 620px;
+    left: calc(50% - 500px);
+}
+
+.settingsItem{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    width: 313px;
+    height: 600px;
+    float: left;
+    margin: 10px;
+}
+
+.settingsItemTitle{
+    position: relative;
+    background-color: var(--primary);
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+.settingsItemContent{
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(100% - 60px);
+    padding: 10px;
+}

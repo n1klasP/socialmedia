@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import "../../css/WelcomeMenu.css";
+import "../../css/style.css";
 import MenuLinkList from "../forms/MenuLinkList";
 
-const WelcomeContact = () => {
+    const WelcomeContact = () => {
     return(
         <div>
             <div id="divLogo">
@@ -12,7 +12,7 @@ const WelcomeContact = () => {
                 <MenuLinkList/>
             </div>
             <div id="divMenuHome">
-
+                {}
             </div>
         </div>
     );

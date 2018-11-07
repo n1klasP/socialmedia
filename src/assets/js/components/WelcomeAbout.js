@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "../../css/WelcomeMenu.css";
+import "../../css/style.css";
 import MenuLinkList from "../forms/MenuLinkList";
 
 const WelcomeAbout = () => {
